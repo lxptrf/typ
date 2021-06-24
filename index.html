@@ -1,105 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎来到唐一萍的世界</title>
-    <script src="./bootstrap.min.js"></script>
-    <script src="./jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./animate.min.css">
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./bootstrap.min.css"> -->
+    <!-- <script src="./bootstrap.min.js"></script> -->
+    <script src="./jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./image/bg2.png');
+            overflow-y: hidden;
+        }
+
+    .logo {
+        width: 10rem;
+        height: 10rem;
+        margin: 5% auto;
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn {
+        width: 10rem;
+        height: 3rem;
+        margin: 15% auto;
+        
+    }
+    .enter {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(235, 128, 208);
+        border-radius: 50%;
+        cursor: pointer;
+        animation-iteration-count:infinite;
+    animation-duration: 2s;
+    }
+    </style>
 </head>
-
 <body>
-    <div>
-        <header class="header">
-            <div class="page-header page">
-                <!-- <div class="logo"> -->
-                <img src="./image/logo.png" alt="logo" class="logo_img animated pulse">
-                <!-- </div> -->
-                <h1 class="tit container animated fadeInUp">欢迎来到唐一萍的世界！ <small>This is my personal resume</small></h1>
-            </div>
-        </header>
-
-        <div class="main container">
-            <div class="top_img">
-                <img src="./image/zp1.png" alt="12" class="animated bounceIn">
-            </div>
-
-            <div class="shu_img animated fadeInUpBig">
-                <!-- 简介 -->
-                <h2>个人简介</h2>
-                <div class="jl">
-                    <div class="d1">
-                        <ul class="ul1">
-                            <li>姓名：唐一萍</li>
-                            <li>专业年级：18级美术学</li>
-                            <li>学号：201830111044</li>
-                        </ul>
-                    </div>
-                    <div class="d1">
-                        <ul class="ul2">
-                            <li>性别：女</li>
-                            <li>出生年月：2020年5月20日</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 图片展示 -->
-                <div class="displayimg">
-                    <img src="./image/12.png" alt="12">
-                </div>
-            </div>
-        </div>
-
-        <div class="center_img container">
-            <h2 style="text-align: center; font-family: thin;">作品展示</h2>
-            <div class="box1">
-                <div class="zpbox1">
-                    <img src="./image/5.png" alt="zp1">
-                </div>
-
-                <div class="zpbox2">
-                    <img src="./image/zp3.jpg" alt="zp3">
-                </div>
-            </div>
-
-            <div class="box2">
-                <div class="zpbox3">
-                    <img src="./image/zp4.gif" alt="zp4">
-                </div>
-
-                <div class="zpbox4">
-                    <video src="./image/zp2.mp4" autoplay loop></video>
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div class="bottom_tit container">
-            <h2 style="text-align: center; font-family: thin;">课程感想</h2>
-
-            <div class="text">
-                &nbsp &nbsp &nbsp &nbsp
-                随着社会的快速发展，现代教育技术手段也取得了日新月异的变化，在教学当中，使用现代教育技术手段，通过音频、视频等影音文件，可以吸引学生的注意力，激发学生的学习兴趣，使课堂的容量大大增加，拓宽学生的视野，构建一个全新的高效学习的课堂模式，促进学生积极主动去进行学习，提高学生的综合素质。
-            </div>
-
-            <!-- <img src="./image/flo.png" alt="flo" class="flo"> -->
-
-        </div>
-
-        <footer class="footer">
-            <p>Copyright © 2021 & 唐一萍 all rights reserved</p>
-        </footer>
+    <div class="logo">
+        <img src="./image/logo.png" alt="#" class="animated fadeInUp">
     </div>
 
-
-
+    <div class="btn">
+        <button type="button" class="enter animated pulse" id="btn">点击进入</button>
+    </div>
+    
 </body>
 
+<script>
+    $("#btn").click (function() {
+        console.log(1);
+        $(location).attr("href","./index2.html");
+    })
+</script>
 </html>
